@@ -147,7 +147,7 @@ OCamlProgram(correlate_weak_sigs, correlate_weak_sigs $(AUXFILES))
 OCamlProgram(without, without $(AUXFILES))
 OCamlProgram(correlate_deg, correlate_deg $(AUXFILES))
 OCamlProgram(foo, foo $(AUXFILES))
-OCamlProgram(redundancy, redundancy $(AUXFILES) mpi_framework)
+OCamlProgram(redundancy_mpi, redundancy_mpi redundancy $(AUXFILES) mpi_framework)
 
 EXE[] = 
 	basic_properties
@@ -157,7 +157,7 @@ EXE[] =
 	basic_properties_mpi
 	basic_properties_mpi_cas
 	foo
-	redundancy
+	redundancy_mpi
 
 .DEFAULT: $(EXE)
 

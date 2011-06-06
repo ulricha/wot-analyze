@@ -87,3 +87,4 @@ let apply_lines input f =
 	f line
     done;
   with IO.No_more_input -> ()
+
